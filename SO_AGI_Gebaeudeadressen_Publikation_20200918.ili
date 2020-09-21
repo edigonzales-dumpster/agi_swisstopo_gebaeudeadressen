@@ -7,8 +7,8 @@ INTERLIS 2.3;
  *  !!==============================================================================
  */
 !!@ technicalContact="mailto:agi@bd.so.ch"
-MODEL SO_AFU_Gebaeudeadressen_20200918 (de)
-AT "http://agi.so.ch"
+MODEL SO_AFU_Gebaeudeadressen_Publikation_20200918 (de)
+AT "https://agi.so.ch"
 VERSION "2020-09-18"  =
   IMPORTS GeometryCHLV95_V1;
 
@@ -51,6 +51,8 @@ VERSION "2020-09-18"  =
       /** Gemeindenummer (BfS-Nummer)
        */
       BFSNr : MANDATORY TEXT*20;
+      /** Status
+       */
       Status (FINAL) : MANDATORY (
         abgebrochen,
         real,
@@ -79,4 +81,4 @@ VERSION "2020-09-18"  =
 
   END Gebaeudeadressen;
 
-END SO_AFU_Gebaeudeadressen_20200918.
+END SO_AFU_Gebaeudeadressen_Publikation_20200918.
